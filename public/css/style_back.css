@@ -1,0 +1,65 @@
+/*** ADMIN ***
+***************/
+.admin{
+    width: 100%;
+}
+
+.admin-menu .card-header{
+    background-color: whitesmoke;
+    text-decoration: none;
+    color:inherit;
+    color: white;
+}
+
+.admin-main{
+    background-color: white;
+    margin-left:5%;
+}
+
+/*** page UTILISATEURS ***
+*************************/
+
+
+/*** espace MEMBRE ***
+*********************/
+.avatarProfil{
+    width: 35px;
+}
+
+.row{
+    margin-right: 0px !important;
+    margin-left:0px !important;
+}
+
+.btn{
+    border-radius: 0;
+}
+
+.btn-md {
+    border-width: 0;
+    outline: none;
+    border-radius: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    cursor: pointer;
+} 
+
+#structureTitle{
+    color:#f49712;
+}
+
+.card-block{
+    padding:10px 0 10px 0;
+}
+
+.col-12{
+    margin: 5px 0 5px 0;
+}
+
+#infoProfil{
+    background-color: ButtonFace; 
+    border-color: ButtonFace;
+    margin-bottom:10px;
+}
+
+/*** espace MEMBRE - La RECHERCHE ***
+************************************/
