@@ -21,25 +21,25 @@ class ContactController extends Controller
         });
 
         $title = "Confirmation de contact";
-        $msg = "Merci. Votre message a été transmis à l'administrateur du site. Vous recevrez une réponse rapidement.";
+        $msg = "Merci pour votre message. Il a été transmis à l'économie sociale et solidaire. Vous recevrez une réponse rapidement.";
 
         return view('confirm', compact('title', 'msg'));
     }
 
-    public function store(Request $request)
-    {
-        $this->validate($request, [
-            'telephone' => 'required|min:11|max:0989999999|numeric'
-        ]);
+    // public function store(Request $request)
+    // {
+    //     $this->validate($request, [
+    //         'telephone' => 'required|min:11|max:0989999999|numeric'
+    //     ]);
 
-        Mail::send('email_tel_contact',  $request->only('telephone'), function($message) 
-        {
-            $message->to('rossi56@hotmail.fr')->subject('Contact téléphonique');
-        });
+    //     Mail::send('email_tel_contact',  $request->only('telephone'), function($message) 
+    //     {
+    //         $message->to('rossi56@hotmail.fr')->subject('Contact téléphonique');
+    //     });
 
-        $title = "Confirmation de contact téléphonique";
-        $msg = "Merci. Votre numéro de téléphone a été transmis à l'administrateur du site. Vous recevrez une réponse rapidement.";
+    //     $title = "Confirmation de contact téléphonique";
+    //     $msg = "Merci. Votre numéro de téléphone a été transmis à l'administrateur du site. Vous recevrez une réponse rapidement.";
         
-        return view('confirm', compact('title', 'msg'));
-    }
+    //     return view('confirm', compact('title', 'msg'));
+    // }
 }

@@ -25,14 +25,15 @@ class ContactRequest extends FormRequest
     {
         return [
             //alpha = accepte que des caractères alphabétiques
-            'nom' => 'required|min:5|max:20|alpha',
+            'nom' => 'required|alpha',
+            'prenom' => 'required|alpha',
             //min = nombre minimum de caractères
             'structure' => 'required|min:3|max:20|string',
             //required = valeur requise donc le champ ne doit pas être vide
             'objet' => 'required|string',
             //email = la valeur doit être une adresse email valide.
             'email' => 'required|email',
-            'texte' => 'required|max:250', 
+            'texte' => 'required', 
         ];
  
     }

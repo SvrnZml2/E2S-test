@@ -5,8 +5,7 @@
 @section('content')
 <div class="row">
   <div id="pictEncart" class="col-sm-12 col-md-12 col-lg-12">
-    <img id="visuel" src="{{asset('images/accueilv')}}isuel.png" alt="photo accueil" class="float-right" height="600"
-      width="600" />
+    <img id="visuel" src="{{asset('images/accueilvisuel.png')}}" alt="photo accueil" class="float-right"  />
     <div class="col-12">
       <div class="topleft">
         <div class="col-sm-12 col-lg-5">

@@ -21,7 +21,7 @@ Route::get('contact', 'ContactController@getForm')->name('contact');
 // soumission du formulaire
 Route::post('contact', 'ContactController@postForm')->name('confirm');
 // soumission du formulaire telephone
-Route::post('tel_contact', 'ContactController@store')->name('confirm_tel');
+// Route::post('tel_contact', 'ContactController@store')->name('confirm_tel');
 
 // Authentification
 Auth::routes();

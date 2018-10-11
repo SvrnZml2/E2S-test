@@ -6,9 +6,8 @@
 
 @section('content')
 
-    <br>
-
-    <div class="formContact" class="container">
+<div class="bloc">
+    <div class="formContact" class="container ">
 
         <div class="row card text-white bg-dark">
 
@@ -23,6 +22,6 @@
         </div>
 
     </div>
-
+</div>
 @endsection
 
